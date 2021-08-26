@@ -1,6 +1,6 @@
 {
     "name": "maurokuoti/php-geoip-shim",
-    "description": "",
+    "description": "PHP GeoIP shim to support legacy geoip_* functions with the GeoIP2 .mmdb database files.",
     "type": "library",
     "require": {
         "php": ">=7.3",
@@ -8,10 +8,11 @@
     },
     "authors": [
         {
-            "name": "maurokuoti",
+            "name": "Mauro Kouti",
             "email": "maurokuoti@protonmail.com"
         }
     ],
+    "license": "MIT",
     "autoload": {
         "psr-4": { "GeoIPShim\\": "src/" },
         "files": [
