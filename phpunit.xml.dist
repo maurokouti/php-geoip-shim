@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         beStrictAboutChangesToGlobalState="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         colors="true"
+         verbose="true"
+         bootstrap="./vendor/autoload.php"
+>
+    <testsuite name="TestSuite">
+        <directory>tests</directory>
+    </testsuite>
+    <php>
+        <env name="DATA_PROVIDER_LIMIT" value="10"/>
+    </php>
+    <coverage cacheDirectory=".phpunit.cache/code-coverage" processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <clover outputFile="clover.xml" />
+        </report>
+    </coverage>
+</phpunit>

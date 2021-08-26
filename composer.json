@@ -1,0 +1,31 @@
+{
+    "name": "maurokuoti/php-geoip-shim",
+    "description": "",
+    "type": "library",
+    "require": {
+        "php": ">=7.3",
+        "geoip2/geoip2": "^2.11"
+    },
+    "authors": [
+        {
+            "name": "maurokuoti",
+            "email": "maurokuoti@protonmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "GeoIPShim\\": "src/" },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": { "GeoIPShim\\Tests\\": "tests/" }
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "phpunit/phpunit": "^9.5",
+        "phpunit/php-code-coverage": "^9.2",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^0.12.96"
+    }
+}
